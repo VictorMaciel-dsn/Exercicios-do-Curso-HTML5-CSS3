@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte / Pré-formatação.</h2>
+    <p>O comando <code>document.getElementById('Teste')</code> é escrito em linguagem JavaScript. Utilizamos a tag CODE.</p>
+    <p>Podemos também utilizar a tag CODE e PRE para organizar os códigos em determinada linguagem de programação.</p>  
+
+    <pre>
+        <code>
+    num = int (input('Digite um número'))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR.')
+    else:
+        print(f'O número {num} é ÍMPAR.')
+        print('Fim do programa.')    
+        </code>
+    </pre>
+    <!--A tag CODE não organiza o código. Para organizar, deve-se utilizar a tag PRE.-->
+
+    <hr>
+
+    <h2>Citações simples.</h2>
+    <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido.</q></p>
+    <!--Para citar a determinada frase é utilizado a tag Q. Ou utilizar aspas duplas ("").-->
+
+    <hr>
+    
+    <h2>Citações completas.</h2>
+    <p>Segundo Maurício Samy, no seu livro Fundamentos de HTML5 e CSS3:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/2iPYCQAAQBAJ?hl=pt-BR&gbpv=1&dq=HTML&printsec=frontcover">
+        Hipertxto é todo texto inserido em um documento para a web e que tem como principal característica a possibilidade de se interligar a outros documentos da web.</blockquote>
+        <!--A citação, visualmente não é visualizada, apenas em caso de algoritimos de busca-->
+
+    <hr>    
+
+        <h2>Abreviações.</h2>
+        <p>Estou estudando <abbr title="HyperText Markup Lenguage">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+        <!--Para mostrar a palavra completa em caso de abreviação, usamos a TAG ABBR.-->
+
+     <hr>
+     
+       <h2>Texto invertido</h2>
+       <p><bdo dir="rtl">Estou aprendo a criar coisas em HTML.</bdo></p>
+       <!--Para mostrar a frase invertida utilizaremos a TAG BDO, sendo para direita para esquerda utilizamos RTL. Sendo para esquerda para direita usamos LTR. Tendo em vista que LTR não há a menor diferença.-->
+</body>
+</html>
