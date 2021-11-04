@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+
+    <p>Tente abrir esse site em vários dipositivos diferentes ou simplesmente aumente e diminua o tamnho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <!--Para carregar a imagem pequena, precisa ser acima da imagem M, por ordem crescente (Do P ao G), e colocar o paramêtro sempre com 50 pexels de sobra do tamanho da imagem.-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <!--O código vai carregar a foto grande mas se for menor que 1000 ou chegar a 1000 Pixels o tamanho da aba do navegador, vai carregar a foto M-->
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture> 
+
+</body>
+</html>
